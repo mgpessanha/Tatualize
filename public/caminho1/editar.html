@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tatualize</title>
+        <link rel="stylesheet" href="caminho1-css/style-editar.css">
+    </head>
+    <body>
+        <header>
+            <div class="header-title">
+                <div class="logo-container">
+                    <a href="../index.html"><img src="../assets/logo.png" alt="Imagem logo Tatualize"></a>
+                </div>
+                <div class="logout-button">
+                    <p id="texto-creditos" title="Quantidade de créditos disponíveis para criar tatuagem.">Créditos:</p>
+                    <p id="creditos"></p>
+                </div>
+                <h1>Hora de montar a sua tatuagem!</h1>
+            </div>
+        </header>
+        <main>
+            <section>
+                <h2>Clique aqui para colocar a foto da sua tatuagem sem o fundo.</h2>
+                <label for="uploadTatuagemNova" id="container">
+                    <img id="imagePreviewNova" src="../assets/galeria.png" alt="Imagem galeria">
+                    <img id="resultado-tatuagem-nova" src="">
+                    <span id="texto-container">Adicione a tatuagem inédita baixada</span>
+                    <input type="file" id="uploadTatuagemNova" class="upload-input" accept="image/*">
+                </label>
+                <h3>Use os botões para deixar a tatuagem no tamanho ideal.</h3>
+                <div class="container-botoes">
+                    <button id="botao-aumentar" type="button" onclick="aumentarTamanhoImagem()" disabled>+</button>
+                    <button id="botao-diminuir" type="button" onclick="diminuirTamanhoImagem()" disabled>-</button>
+                </div>
+            </section>
+            <section>
+                <div class="container-corpo">
+                    <img id="resultado-corpo" src="" alt="Imagem do corpo">
+                </div>
+                <div id="canvasWhiteboard"></div>
+                <button id="botao-finalizar" type="button" onclick="criarMontagem()" disabled>Finalizar</button> 
+            </section>     
+        </main>
+        <footer>
+            <div class="footer-content">
+                <div class="section">
+                    <p class="titulo-footer-sobre">SOBRE O TATUALIZE</p>
+                    <p class="sobre-footer">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Deserunt nisi pariatur quas doloremque rem consectetur laboriosam 
+                        libero nesciunt minus aliquam a eveniet hic iusto ipsa fuga, nemo 
+                        nostrum est. Eum. Lorem ipsum dolor sit amet consectetur adipisicing 
+                        elit. Praesentium consequuntur dignissimos doloremque itaque expedita 
+                        dolor nulla maiores suscipit quia quisquam at quaerat temporibus quidem 
+                        quae eos tempora, voluptas placeat.
+                    </p>
+                </div>
+                <div class="section">
+                    <p class="titulo-footer-redes">REDES SOCIAIS</p>
+                    <div class="rede-social-icons">
+                        <div>
+                            <img src="../assets/facebook.png" alt="Imagem logo facebook" id="logo-face">
+                            <p>tatualize2024</p>
+                        </div>
+                        <div>
+                            <img src="../assets/instagram.png" alt="Imagem logo instagram" id="logo-ig">
+                            <p>tatualize2024</p>
+                        </div>
+                        <div>
+                            <img src="../assets/linkedin.png" alt="Imagem logo linkedin" id="logo-in">
+                            <p>tatualize2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <p class="titulo-footer-contato">CONTATO</p>
+                    <div class="contato-icons">
+                        <div>
+                            <img src="../assets/telefone.png" alt="Imagem telefone" id="logo-telefone">
+                            <p>0800 000 0000</p>
+                        </div>
+                        <div>
+                            <img src="../assets/whatsapp.png" alt="Imagem logo whatsapp" id="logo-wpp">
+                            <p>(00) 00000-0000</p>
+                        </div>
+                        <div>
+                            <img src="../assets/email.png" alt="Imagem email" id="logo-email">
+                            <p>contato@tatualize.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.11/cropper.min.js"></script>
+        <script src="caminho1-js/script-editar.js"></script>
+    </body>
+</html>

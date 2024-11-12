@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tatualize</title>
+        <link rel="stylesheet" href="caminho2-css/style-remover-fundo-ia.css">
+    </head>
+    <body>
+        <header>
+            <div class="header-title">
+                <div class="logo-container">
+                    <a href="../index.html"><img src="../assets/logo.png" alt="Imagem logo Tatualize"></a>
+                </div>
+                <div class="logout-button">
+                    <p id="texto-creditos" title="Quantidade de créditos disponíveis para criar tatuagem.">Créditos:</p>
+                    <p id="creditos"></p>
+                </div>
+                <h1>Segundo passo:</h1>
+            </div>
+        </header>
+        <main>
+            <section>
+                <h2>Clique aqui para adicionar a imagem que você escolheu e, em seguida, aperte o botão <span id="aviso-remover-fundo">"Remover Fundo"</span> para visualizar a sua tatuagem.</h2>
+                <label for="uploadTattoo" class="container">
+                    <img id="imagePreviewTattoo" src="../assets/galeria.png" alt="Imagem galeria">
+                    <span>Adicione a tatuagem gerada</span>
+                    <input type="file" id="uploadTattoo" class="upload-input" accept="image/*">
+                </label>
+            </section>
+            <section>
+                <h2 id="titulo-escondido">Perfeito! Agora clique em <span id="aviso-download">"Download"</span> para baixar a imagem e, em seguida, em <span id="aviso-continuar">"Continuar"</span> para a próxima etapa.</h2>
+                <div class="container-tatuagem">
+                    <div id="loading-animation" class="loading-animation"></div>
+                    <img id="resultado-tatuagem" src=""> 
+                </div>
+            </section>
+            <section class="container-botoes">
+                <div>
+                    <input class="botoes" type="button" value="Remover Fundo" id="removerButton" disabled>
+                </div>
+                <div id="botao-baixar">
+                    <button class="botoes" type="button" id="downloadButton">Download</button>
+                </div>
+            </section>
+            <section class="botao-continuar">
+                <button id="continuarButton" type="button" style="display: none;">Continuar</button>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-content">
+                <div class="section">
+                    <p class="titulo-footer-sobre">SOBRE O TATUALIZE</p>
+                    <p class="sobre-footer">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Deserunt nisi pariatur quas doloremque rem consectetur laboriosam 
+                        libero nesciunt minus aliquam a eveniet hic iusto ipsa fuga, nemo 
+                        nostrum est. Eum. Lorem ipsum dolor sit amet consectetur adipisicing 
+                        elit. Praesentium consequuntur dignissimos doloremque itaque expedita 
+                        dolor nulla maiores suscipit quia quisquam at quaerat temporibus quidem 
+                        quae eos tempora, voluptas placeat.
+                    </p>
+                </div>
+                <div class="section">
+                    <p class="titulo-footer-redes">REDES SOCIAIS</p>
+                    <div class="rede-social-icons">
+                        <div>
+                            <img src="../assets/facebook.png" alt="Imagem logo facebook" id="logo-face">
+                            <p>tatualize2024</p>
+                        </div>
+                        <div>
+                            <img src="../assets/instagram.png" alt="Imagem logo instagram" id="logo-ig">
+                            <p>tatualize2024</p>
+                        </div>
+                        <div>
+                            <img src="../assets/linkedin.png" alt="Imagem logo linkedin" id="logo-in">
+                            <p>tatualize2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <p class="titulo-footer-contato">CONTATO</p>
+                    <div class="contato-icons">
+                        <div>
+                            <img src="../assets/telefone.png" alt="Imagem telefone" id="logo-telefone">
+                            <p>0800 000 0000</p>
+                        </div>
+                        <div>
+                            <img src="../assets/whatsapp.png" alt="Imagem logo whatsapp" id="logo-wpp">
+                            <p>(00) 00000-0000</p>
+                        </div>
+                        <div>
+                            <img src="../assets/email.png" alt="Imagem email" id="logo-email">
+                            <p>contato@tatualize.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="caminho2-js/script-remover-fundo-ia.js" type="module"></script>
+    </body>
+</html>

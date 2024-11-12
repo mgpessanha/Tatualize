@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tatualize - Home</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/style-login-cadastro.css">
+    </head>
+    <body>
+        <div class="ink-drop"></div>
+        <div id="splash"></div>
+        </div>   
+        <div id="main-content">
+            <header>
+                <div class="header-content">
+                    <div>
+                        <a href="#"><img src="assets/logo.png" alt="Imagem logo Tatualize"></a>
+                    </div>
+                    <div>
+                        <h1>Bem-vindo ao <span id="h1-titulo">Tatualize</span>!</h1>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <div class="container" id="container">
+                    <div class="form-container sign-up-container">
+                        <form action="#">
+                            <h2 class="h2-titulo">Faça o Cadastro</h2>
+                            <div class="social-container">
+                                <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" id="google-cadastro" class="social"><i class="fab fa-google-plus-g"></i></a>
+                                <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                            <span class="avisos">use o seu email para se registrar</span>
+                            <div class="infield">
+                                <input type="email" placeholder="Email" name="email2" id="email2" onchange="onChangeEmail2()"/>
+                                <div class="error2" id="email-obrigatorio-error2">Email é obrigatório</div>
+                                <div class="error2" id="email-invalido-error2">Email inválido</div>
+                            </div>
+                            <div class="infield">
+                                <input type="password" placeholder="Senha" id="password2" onchange="onChangePassword2()"/>
+                                <div class="error2" id="senha-obrigatoria-error2">Senha é obrigatória</div>
+                                <div class="error2" id="senha-tamanho-error">A senha tem que ter pelo menos 6 caracteres</div>
+                            </div>
+                            <div class="infield">
+                                <input type="password" placeholder="Confirmar senha" id="confirmPassword" onchange="onChangeConfirmPassword()"/>
+                                <div class="error2" id="senha-diferente-error">Senha e Confirmar senha devem ser iguais</div>
+                            </div>
+                            <button type="button" class="solid" id="cadastrar-botao" disabled="true" onclick="cadastrar()">Cadastrar</button>
+                        </form>
+                    </div>
+
+                    <!---------------------------------------------------------------------------------------------------->
+
+
+                    <div class="form-container sign-in-container">
+                        <form action="#">
+                            <h2 class="h2-titulo">Faça o Login</h2>
+                            <div class="social-container">
+                                <a href="#" id="facebook-login" class="social"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" id="google-login" class="social"><i class="fab fa-google-plus-g"></i></a>
+                                <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                            <span class="avisos">use a sua conta</span>
+                            <div class="infield">
+                                <input type="email" name="email" id="email" placeholder="Email" onchange="onChangeEmail()"/>
+                                <div class="error" id="email-obrigatorio-error">Email é obrigatório</div>
+                                <div class="error" id="email-invalido-error">Email inválido</div>
+                            </div>
+                            <div class="infield">
+                                <input type="password" name="password" id="password" placeholder="Senha" onchange="onChangePassword()"/>
+                                <div class="error" id="senha-obrigatoria-error">Senha é obrigatória</div>
+                            </div>
+                            <a href="#" class="forgot" type="button" class="clear" id="recuperar-botao" onclick="recoverPassword()" disabled="true">Esqueceu a senha?</a>
+                            <button type="button" class="solid" id="entrar-botao" disabled="true" onclick="login()">Entrar</button>
+                        </form>
+                    </div>
+                    <div class="overlay-container" id="overlayCon">
+                        <div class="overlay">
+                            <div class="overlay-panel overlay-left">
+                                <h2>Já tem uma conta?</h2>
+                                <p>Para se manter conectado entre com as suas informações aqui</p>
+                                <button>Entrar</button>
+                            </div>
+                            <div class="overlay-panel overlay-right">
+                                <h2>Não tem uma conta?</h2>
+                                <p>Coloque seus dados e inicie a sua jornada no Tatualize</p>
+                                <button>Cadastrar</button>
+                            </div>
+                        </div>
+                        <button id="overlayBtn"></button>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <div class="footer-content">
+                    <div class="section">
+                        <p class="titulo-footer-sobre">SOBRE O TATUALIZE</p>
+                        <p class="sobre-footer">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Deserunt nisi pariatur quas doloremque rem consectetur laboriosam 
+                            libero nesciunt minus aliquam a eveniet hic iusto ipsa fuga, nemo 
+                            nostrum est. Eum. Lorem ipsum dolor sit amet consectetur adipisicing 
+                            elit. Praesentium consequuntur dignissimos doloremque itaque expedita 
+                            dolor nulla maiores suscipit quia quisquam at quaerat temporibus quidem 
+                            quae eos tempora, voluptas placeat.
+                        </p>
+                    </div>
+                    <div class="section">
+                        <p class="titulo-footer-redes">REDES SOCIAIS</p>
+                        <div class="rede-social-icons">
+                            <div>
+                                <img src="assets/facebook.png" alt="Imagem logo facebook" id="logo-face">
+                                <p class="texto-icons">tatualize2024</p>
+                            </div>
+                            <div>
+                                <img src="assets/instagram.png" alt="Imagem logo instagram" id="logo-ig">
+                                <p class="texto-icons">tatualize2024</p>
+                            </div>
+                            <div>
+                                <img src="assets/linkedin.png" alt="Imagem logo linkedin" id="logo-in">
+                                <p class="texto-icons">tatualize2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <p class="titulo-footer-contato">CONTATO</p>
+                        <div class="contato-icons">
+                            <div>
+                                <img src="assets/telefone.png" alt="Imagem telefone" id="logo-telefone">
+                                <p class="texto-icons">0800 000 0000</p>
+                            </div>
+                            <div>
+                                <img src="assets/whatsapp.png" alt="Imagem logo whatsapp" id="logo-wpp">
+                                <p class="texto-icons">(00) 00000-0000</p>
+                            </div>
+                            <div>
+                                <img src="assets/email.png" alt="Imagem email" id="logo-email">
+                                <p class="texto-icons">contato@tatualize.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+    <script src="https://www.gstatic.com/firebasejs/10.11.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.11.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.11.1/firebase-database-compat.js"></script>
+    <script src="js/firebase-init.js"></script>
+    <script src="js/validations.js"></script>
+    <script src="js/script-login.js"></script>
+    <script src="js/script-cadastro.js"></script>
+</html>

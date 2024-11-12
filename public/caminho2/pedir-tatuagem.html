@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tatualize - Home</title>
+        <link rel="stylesheet" href="caminho2-css/style-pedir-tatuagem.css">
+    </head>
+    <body>
+        <header>
+            <div class="header-title">
+                <div class="logo-container">
+                    <a href="../index.html"><img src="../assets/logo.png" alt="Imagem logo Tatualize"></a>
+                </div>
+                <div class="logout-button">
+                    <p id="texto-creditos" title="Quantidade de créditos disponíveis para criar tatuagem.">Créditos:</p>
+                    <p id="creditos"></p>
+                </div>
+                <h1>Primeiro passo:</h1>
+            </div>
+        </header>
+        <main>
+            <section class="geracao-imagem">
+                <div class="conteudo">
+                    <h2>Descreva como você gostaria que fosse a sua tatuagem: </h2>
+                    <form action="#" class="input-container">
+                        <input type="text" id="descricao-tatuagem" placeholder="Digite aqui..." required>
+                        <div class="controles">
+                            <select class="img-quantidade">
+                                <option value="1" selected>1 Imagem</option>
+                                <option value="2">2 Imagens</option>
+                                <option value="3">3 Imagens</option>
+                            </select>
+                            <button id="botao-enviar-api" type="submit" disabled>Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section class="section-escondida">
+                <h2 id="titulo-escondido">Perfeito! Para baixar a imagem de sua preferência, clique no botão <img id="img-botao-download" src="../assets/download.svg" alt=""> localizado no canto inferior direito da imagem e, em seguida, clique em <span id="aviso-continuar">"Continuar"</span> para a próxima etapa.</h2>
+            </section>
+            <section class="container-imagem">
+                <div class="img-card">
+                    <h2 id="texto-container">AI Image Generator</h2>
+                </div>
+            </section>
+            <section class="botao-continuar">
+                <button id="continuarButton" type="button">Continuar</button>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-content">
+                <div class="section">
+                    <p class="titulo-footer-sobre">SOBRE O TATUALIZE</p>
+                    <p class="sobre-footer">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Deserunt nisi pariatur quas doloremque rem consectetur laboriosam 
+                        libero nesciunt minus aliquam a eveniet hic iusto ipsa fuga, nemo 
+                        nostrum est. Eum. Lorem ipsum dolor sit amet consectetur adipisicing 
+                        elit. Praesentium consequuntur dignissimos doloremque itaque expedita 
+                        dolor nulla maiores suscipit quia quisquam at quaerat temporibus quidem 
+                        quae eos tempora, voluptas placeat.
+                    </p>
+                </div>
+                <div class="section">
+                    <p class="titulo-footer-redes">REDES SOCIAIS</p>
+                    <div class="rede-social-icons">
+                        <div>
+                            <img src="../assets/facebook.png" alt="Imagem logo facebook" id="logo-face">
+                            <p>tatualize2024</p>
+                        </div>
+                        <div>
+                            <img src="../assets/instagram.png" alt="Imagem logo instagram" id="logo-ig">
+                            <p>tatualize2024</p>
+                        </div>
+                        <div>
+                            <img src="../assets/linkedin.png" alt="Imagem logo linkedin" id="logo-in">
+                            <p>tatualize2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <p class="titulo-footer-contato">CONTATO</p>
+                    <div class="contato-icons">
+                        <div>
+                            <img src="../assets/telefone.png" alt="Imagem telefone" id="logo-telefone">
+                            <p>0800 000 0000</p>
+                        </div>
+                        <div>
+                            <img src="../assets/whatsapp.png" alt="Imagem logo whatsapp" id="logo-wpp">
+                            <p>(00) 00000-0000</p>
+                        </div>
+                        <div>
+                            <img src="../assets/email.png" alt="Imagem email" id="logo-email">
+                            <p>contato@tatualize.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://www.gstatic.com/firebasejs/10.11.1/firebase-app-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.11.1/firebase-auth-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.11.1/firebase-database-compat.js"></script>
+        <script src="../js/firebase-init.js"></script>
+        <script src="../js/auth-guard.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+        <script src="caminho2-js/script-pedir-tatuagem.js" defer type="module"></script>
+    </body>
+</html>

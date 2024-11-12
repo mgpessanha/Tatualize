@@ -1,0 +1,279 @@
+body {
+    background-color: #E7CEFF;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*-------------------- header --------------------*/
+header {
+    text-align: center;
+    padding: 10px 30px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+}
+
+.logout-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: inline-flex;
+    gap: 15px;
+}
+
+#texto-creditos {
+    font-weight: 600;
+    text-decoration: underline;
+    cursor: help;
+}
+
+#creditos {
+    align-items: center;
+    justify-content: center;
+    margin-right: 25px;
+    color: #fff;
+    font-weight: 600;
+    border: 2px solid #000;
+    padding: 2px 10px;
+    background-color: #5a146b;
+    margin-top: 10px;
+}
+
+header img {
+    width: 70%;
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-style: italic;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0;  
+    margin-bottom: 20px; 
+}
+
+/*-------------------- main --------------------*/
+main {
+    display: flex;
+    gap: 10px; 
+    margin-top: 5px;
+    margin-bottom: 60px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+main > section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+}
+
+h2 {
+    font-style: normal;
+    font-size: 15px;
+    width: 60%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+h3 {
+    font-style: normal;
+    font-size: 13px;
+    width: 40%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 5px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+#container {
+    width: 200px;
+    height: 150px;
+    margin-left: 150px; 
+    margin-right: auto;
+    margin-bottom: 5px;
+    padding: 10px;
+    border: 4px double #000;
+    transition: 0.3s ease;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#imagePreviewNova:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease; 
+}
+
+#container:hover {
+    border-style: dashed;
+}
+
+#container img {
+    max-width: 50%;
+    max-height: 50%;
+    margin-bottom: 10px;
+}
+
+#container span {
+    color: #000000;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+
+label#container input[type="file"] {
+    display: none;
+}
+
+#resultado-tatuagem-nova {
+    width: 100px;
+    height: 100px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    cursor: pointer; 
+}
+
+#resultado-corpo {
+    width: 100%; 
+    height: 100%;
+    margin: 20px auto; 
+    margin-bottom: 5px;
+    display: block; 
+}
+
+button:active {
+    opacity: 0.8;
+}
+
+#botao-finalizar {
+    margin-left: auto;
+    margin-right: auto;
+    display: block; 
+    padding: 10px;
+    width: 20%; 
+    background-color: #5a146b; 
+    color: #ffffff; 
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 16px; 
+    cursor: pointer; 
+    text-align: center;
+    margin-top: 15px; 
+}
+
+#botao-finalizar:hover{
+    transform: scale(1.2); 
+    transition: transform 0.3s ease;
+}
+
+.container-botoes {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 415px;
+    margin-bottom: 100px;
+}
+
+#botao-aumentar {
+    margin-top: 10px;
+    display: block; 
+    padding: 10px;
+    width: 50px;
+    height: 50px; 
+    background-color: #5a146b; 
+    color: #ffffff; 
+    border: 2px solid black;
+    border-radius: 50px; 
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 25px;
+    text-align: center;  
+}
+
+#botao-diminuir {
+    margin-top: 10px;
+    display: block; 
+    padding: 10px;
+    width: 50px;
+    height: 50px; 
+    background-color: #5a146b; 
+    color: #ffffff; 
+    border: 2px solid black;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 25px;
+    text-align: center;
+}
+
+#botao-diminuir:hover, #botao-aumentar:hover {
+    border: 4px outset rgb(177, 173, 173);
+}
+
+#botao-diminuir:disabled, #botao-aumentar:disabled, #botao-finalizar:disabled{
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+/*-------------------- footer --------------------*/
+footer {
+    background-color: #9856B7;
+    color: #000000;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.section {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-footer-sobre {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.titulo-footer-redes, .titulo-footer-contato {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.sobre-footer {
+    text-align: justify;
+}
+
+.rede-social-icons div, .contato-icons div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.rede-social-icons img, .contato-icons img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
